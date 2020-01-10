@@ -1,0 +1,10 @@
+@import '~@angular/material/theming';
+
+$skynet-theme-primary: mat-palette($mat-grey);
+$skynet-theme-accent: mat-palette($mat-light-blue, A200, A100, A400);
+$skynet-theme-warn: mat-palette($mat-red);
+
+$skynet-theme: mat-dark-theme($skynet-theme-primary, $skynet-theme-accent, $skynet-theme-warn);
+$background: map-get($skynet-theme, background);
+$primary: map-get($skynet-theme, primary);
+$accent: map-get($skynet-theme, accent);

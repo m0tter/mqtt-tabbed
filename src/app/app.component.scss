@@ -1,0 +1,14 @@
+
+@import '~@angular/material/theming';
+@import '../variables';
+
+
+.routeActive {
+  background-color: mat-color($accent, 900);
+}
+
+.topbutton {
+  border-radius: 0;
+  min-height: 100%;
+  padding-top: 12px;
+}
