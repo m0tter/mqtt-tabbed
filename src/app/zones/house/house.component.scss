@@ -1,7 +1,29 @@
+@import '~@angular/material/theming';
+@import '../../../variables';
+
 .spacer-fill {
   flex: 1 1 auto;
+}
+.panel {
+  margin-top: 5px;
 }
 .mat-expansion-panel-header {
   color: inherit !important;
   line-height: 22px;
+}
+.content {
+  padding-top: 0;
+}
+.title-text {
+  padding-left: 10px;
+}
+.title-button {
+  text-align: left;
+  padding-left: 0;
+}
+.description {
+  padding-top: 7px;
+}
+.arrow {
+  color: mat-color($primary, 500);
 }

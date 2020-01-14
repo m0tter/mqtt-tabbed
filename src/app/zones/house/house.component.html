@@ -2,17 +2,36 @@
   <mat-tab label="Lights">
     <div class="content">
       <mat-accordion>
-        <mat-expansion-panel hideToggle disabled>
+        <mat-expansion-panel hideToggle disabled class="panel" #matExpansionPanel>
           <mat-expansion-panel-header>
             <mat-panel-title>
-              <span>Lounge</span>
+              <button mat-button class="title-button" (click)="matExpansionPanel.toggle()">
+                <mat-icon class="arrow" aria-label="expand" aria-hidden="false">keyboard_arrow_down</mat-icon>
+                <span class="title-text">Lounge</span>
+              </button>
             </mat-panel-title>
-            <mat-panel-description>
+            <mat-panel-description class="description">
               <span class="spacer-fill"></span>
               <mat-slide-toggle></mat-slide-toggle>
             </mat-panel-description>
           </mat-expansion-panel-header>
           <p>LED downlights in the living room</p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel hideToggle disabled class="panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <button mat-button class="title-button">
+                <mat-icon class="arrow" aria-hidden="false" aria-label="expand">keyboard_arrow_down</mat-icon>
+                <span class="title-text">Kitchen</span>
+              </button>
+            </mat-panel-title>
+            <mat-panel-description class="description">
+              <span class="spacer-fill"></span>
+              <mat-slide-toggle></mat-slide-toggle>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>Lightbar over the sink</p>
         </mat-expansion-panel>
       </mat-accordion>
     </div>
@@ -21,3 +40,4 @@
   <mat-tab label="Power"></mat-tab>
 </mat-tab-group>
 
+ 
