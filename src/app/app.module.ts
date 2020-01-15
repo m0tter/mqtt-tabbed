@@ -7,6 +7,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,7 +30,8 @@ import { OutsideComponent } from './zones/outside/outside.component';
     MatTabsModule,
     MatExpansionModule,
     MatIconModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
