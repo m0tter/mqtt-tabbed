@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+@import '~src/variables';
+
+.content {
+    padding: 10px;
+    display: inline-flex;
+}
+
+.switch {
+    text-align: center;
+    min-width: 58px;
+}
+.switch-off {
+    background-color: mat-color($primary, 600);
+}

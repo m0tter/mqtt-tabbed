@@ -14,12 +14,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HouseComponent } from './zones/house/house.component';
 import { OutsideComponent } from './zones/outside/outside.component';
+import { SwitchComponent } from './shared/switch/switch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HouseComponent,
-    OutsideComponent
+    OutsideComponent,
+    SwitchComponent
   ],
   imports: [
     BrowserModule,
