@@ -1,6 +1,6 @@
 <div class="content">
     <mat-card class="switch">
         <p>{{label}}</p>
-        <button mat-fab [ngClass]="switchOn == true ? '' : 'switch-off'" (click)="buttonClick($event)">On</button>
+        <button mat-fab [ngClass]="switchOn == true ? '' : 'switch-off'" (click)="buttonClick($event)">{{stateLabel}}</button>
     </mat-card>
 </div>

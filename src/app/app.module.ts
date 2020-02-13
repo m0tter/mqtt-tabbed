@@ -9,12 +9,20 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCardModule } from '@angular/material/card';
 
+import { MqttModule, IMqttServiceOptions } from 'ngx-mqtt';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HouseComponent } from './zones/house/house.component';
 import { OutsideComponent } from './zones/outside/outside.component';
 import { SwitchComponent } from './shared/switch/switch.component';
+
+export const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
+  hostname: 'mqtt.lh',
+  port: 9001,
+  path: '/mqtt'
+}
 
 @NgModule({
   declarations: [
@@ -26,6 +34,7 @@ import { SwitchComponent } from './shared/switch/switch.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MqttModule.forRoot(MQTT_SERVICE_OPTIONS),
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
